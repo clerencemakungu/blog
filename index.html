@@ -1,108 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Clerence's Personal Blog</title>
-        
-        <style>
-            body {
-                background-color: white;
-                background-image: url("coffee.jpg");
-            }
-            .circular {
-                border-radius: 200px
-            }
-            
-            .header1{
-                text-family: monospace;
-                text-transformation: underline;
-                color: red;
-                text-shadow: 4px 4px 4px black;
-            }
-        </style>
-    </head>
-    
-    <body>
-    <!--Style the image to have text on the side using the table tag-->
-        <table cellspacing="20">
-            <tr>
-                <!--The first role contains the image while the second has text-->
-                <td><img class="circular" src="picture.jpg" alt="clerence portrait"  width="200px" height="200px" border="2px"></td>
-                <!-- use the <a> to insert a link using the href attribute-->
-                <td>
-                    <h1 class="header1">Clerence Makungu</h1>
-                    <p> I am a 3rd year student studying a Bachelors in ICTs with Education at <a href="https://www.unza.zm/">The University Of Zambia</a>.<br>
-                    Get in touch with me <a href=contactDetails.html>here</a> <br><br>
-                    <h3>HOBBIES</h3>
-                    <ul>
-                        <li>Playing Music</li>
-                        <li>Playing Football</li>
-                        <li>Playing Table Tennis</li>
-                        <li>Coding</li>
-                        <li>Taking Walks</li>
-                    </ul>
-                    </p>
-                </td>
-            </tr>
-        </table>
+<html lang="en">
+<head>
+    <title>blog </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud">
+        <h1>I am Clerence.</h1>
+        <h2>a Software Engineer</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+        <img src="images/mountain.png" alt="mountain">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img class="my-image" src="images/cm.jpg" alt="clerence" >
+          <h2>Hello.</h2>
+          <p>I am a 3rd year student studying a Bachelors in ICTs with Education at The University Of Zambia.</p>
+        </div>
         <hr>
-        <h3>SKILLS</h3>
-        <table cellspacing = "20">
-            <tr>
-                <td>Effective Communication</td> 
-                <td>⭐️⭐️⭐️⭐ ⭐️</td>
-                <td>Research</td>
-                <td>⭐️⭐️⭐️</td>
-            </tr>
-            <tr>
-                <td>Team Work</td>
-                <td>⭐️⭐️⭐️⭐ ⭐️</td>
-                <td>Software Engineering</td>
-                <td>⭐️⭐️</td>
-            </tr>
-            <tr>
-                <td>Coding</td>
-                <td>⭐️⭐️⭐️</td>
-                <td>Database Designing</td>
-                <td>⭐️⭐️</td>
-            </tr>
-            <tr>
-                <td>Teaching</td>
-                <td>⭐️⭐️⭐️⭐ ⭐</td>
-            </tr>
-            
-        </table>
-        
-       <hr>
-       <h3>WORK EXPERIENCE</h3><br>
-        <!--create a table and style it with with boarder for lines in table-->
-        <table border="1">
-        
-            <!-- create a table head element-->
-            <thead>
-                <!-- create rows using the tr tag-->
-                <tr>
-                    <!-- input data in the table head cell-->
-                    <th>YEAR</th>
-                    <th>ORGANISATION/INSTITUTION</th>
-                    <th>ACHIEVEMENT</th>
-                </tr>
-            </thead>
-            
-            <!-- create a table body element-->
-            <tbody>
-                <tr>
-                    <!-- insert data(content) in the cell-->
-                    <td><Strong>2013-2017</strong></td>
-                    <td>St Raphael's secondary School</td>
-                    <td>Certificate: Grade 9 and Grade 12</td>
-                </tr>
-                
-                <tr>
-                    <td><strong>2020-2024</strong></td>
-                    <td>The University of Zambia</td>
-                    <td>Degree in Software Engineering</td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="skill1" id="circular" src="images/code.png" alt="coding">
+            <h3>Coding</h3>
+            <p>I had no idea about programming until my days in University.I have developed
+                so much interest in coding and wish to keep learning more and more. I am conversant with HTML, CSS, Java, SQL and Python</p>
+          </div>
+          <div class="skill-row">
+            <img class="skill2" id="circular" src="images/ping-pong.png" alt="table tennis">
+            <h3>Table Tennis</h3>
+            <p>Sport has always been at the core of my heart. From soccer, chess up until
+                playing competitive Table Tennis. I am a Varsity Table Tennis Player.</p>
+          </div>
+          <div class="skill-row">
+            <img class="skill3" id="circular" src="images/public-speaking.png" alt="Public Speaking">
+            <h3>Public Speaking</h3>
+            <p>I became a fluent public speaker when i was in highschool. During that period, i got a lot 
+                exposure while participating in debate competitons.</p>
+          </div>
+          <div class="skill-row">
+            <img class="skill4" id="circular" src="images/teamwork.png" alt="team work">
+            <h3>Teamwork</h3>
+            <p>Well desired good interpesonal communication skills and leadership qualities has enabled
+                me to work and engage with people from different works of life. This has given
+                me so much experience and taught me to be who i am today.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you enjoy sports as much as i do.</h3>
+          <p>Lets talk about how awesome sport is. We can share some coding ideas on developing sporting games</p>
+          <a class="BUTTON_VSQ" href="mailto:clemakungu@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.facebook.com/clerence.makungu">Facebook</a>
+        <a class="footer-link" href="https://clerencemakungu.github.io/blog/">Website</a>
+        <p id="name">© Clerence Makungu @ UNZA.zm</p>
+      </div> 
+      
+</body>
 </html>
